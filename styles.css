@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.topbar{
+    background-color: cornflowerblue;
+    height: 65px;
+    /* width:1279px; */
+    width: 100%;
+    color:white;
+position: fixed;
+    
+}
+.title{
+    top:10px;
+    color:white;
+    position: inherit;
+    background-color: cornflowerblue;
+    width:500px;
+    display:flex;
+    }
+.login button{color:#000;
+background-color: #fff;
+border-radius: 15%;
+padding: 5px 10px;
+position: relative;
+}
+.login button:hover{
+    border:2px solid rgb(0, 156, 240);
+    background-color: #fff;
+}
+.sign button:hover{
+    border:2px solid rgb(0, 156, 240);
+    background-color: #fff;
+}
+.sign button{color:#000;
+        background-color: #fff;
+        border-radius: 15%;
+        padding: 5px 8px;
+        position: relative;
+}
+.login{
+    left:1123px;
+    flex:1;
+    position:inherit; 
+    background-color: cornflowerblue;
+    font-size: 30px;
+
+}
+.sign{
+  left: 1192px; 
+   position: inherit;
+   background-color: cornflowerblue;
+   font-size: 30px;
+}
+.down{
+    display: flex;
+}
+.leftbar{
+flex:1;
+width: 250px;
+height:1000px;
+background-color: whitesmoke;
+position:fixed;
+margin-top: 65px;
+}
+.rightbar{
+width: 100%;
+background-color: white;
+height: 632px;
+margin-left: 250px;
+color: black;
+}
+.tasla{
+    background-color: whitesmoke;
+}
+.leftbar li{
+    list-style: none;
+    padding: 10px;
+    border-top: 0.1px solid black;
+}
+.leftbar li:hover{
+    border: 2px solid black;
+}
+#welcome{
+    margin-top: 77px;
+    background-color: #fff;
+    margin-left:14px;
+}
+.rect{
+    height: 130px;
+    width: 221px;
+    border: 2px solid rgb(207, 156, 212);
+    border-radius:10px ;
+    /* background-color: blue; */
+    font-size: 4rem;
+    overflow: hidden;
+   transition-duration: 2ms;
+}
+.rect:hover{
+    border:3px solid rgb(207, 156, 212);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    background-color: #fff;
+    margin: 30px 10px;
+}
+.payments{
+    flex:1;
+    height: 150px;
+    width: 500px;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+#hula{
+    background-color: rgb(197, 206, 206);
+    height: 30px;
+}
+.white{
+    margin-top: 2px;
+    width: 221px;
+    height: 43px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.notification{
+    border-bottom: 1px solid black;
+    height: 30px;
+    
+}
+.notification:hover{
+    font-size: medium;
+    text-decoration: underline;
+}
+.payments button{
+    margin-top: 10px;
+    margin-left: 117px;
+    background-color: #5ad904;
+    border-radius:8px;
+    padding: 8px 109px 8px 92px;
+}
+.payments button:hover{
+    background-color: #0066cc;
+    border:2px solid grey;
+}
+.boxing{
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+.side
+{
+        height: 150px;
+        width: 400px;
+        border: 2px solid gray;
+        overflow: hidden;
+        margin-right:15px;
+}
+#pay{
+    background-color: rgb(255, 163, 163);
+    height: 30px;
+    color:rgb(255, 0, 132);
+}
+.noty{
+    margin-top: 20px;
+    padding: 7px;
+    border:1px solid grey;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.noty:hover{
+    border:2px solid grey;
+}
+.white:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .down {
+        flex-direction: column;
+    }
+
+    .leftbar {
+        width: 0;
+        margin-left: 0;
+    }
+
+    .rightbar {
+        width: 100%;
+        margin-left: 0;
+    }
+    .tasla{
+        visibility: hidden;
+    }
+    .login,
+    .sign {
+        left: initial;
+        flex: initial;
+        position: initial;
+        background-color: cornflowerblue;
+        font-size: 20px;
+        margin-top: 10px; /* Adjust the margin as needed */
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rect {
+        width: 100%;
+    }
+
+    .boxing {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 0;
+        margin-right: 0;
+    }
+
+    #welcome {
+        margin-top: 80px;
+        margin-left: 0;
+    }
+
+    .notification,
+    .noty {
+        font-size: small; 
+    }
+}
